@@ -1,0 +1,182 @@
+.montserrat-paragraph-text {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+.fira-code-text-title {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-size: 20px;
+  text-align: left;
+}
+
+.fira-code-header-title {
+  font-family: "Fira Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 48px;
+  text-align: left;
+}
+
+.header-bg {
+  background-color: #EAE4D5;
+}
+
+.hero-bg {
+  background-color: white;
+        }
+
+.container-wrapper-intro {
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 700px;
+    margin-bottom: 50px;
+    
+}
+
+.container-intro-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left; /*Direction column need align to center or left align here*/
+    padding: 30px;
+    margin-left: 60px;
+    gap: 10px;
+}
+
+.container-intro-flex > p {
+    text-align: left;
+}
+
+.container-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+}
+
+.header-image {
+    width: 600px;
+}
+
+.introduction-container {
+    display: flex;
+    align-items: center; /*Since flex direction si columns use align-items to center*/
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 100px;;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 250px;
+}
+
+.box-intro {
+    max-width: 600px;   
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.container-showcase {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-bottom: 100px;   
+}
+
+.image-showcase {
+    width: 350px;
+    height: 250px;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 5%;
+
+}
+
+.container-showcase-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.container-showcase-item > h3 {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
+    text-align: left;
+}
+
+.container-showcase-item > p {
+    font-family: "Fira Code", monospace;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+    font-size: 18px;
+    text-align: left;
+    padding: 0px 100px;
+}
+
+.bottom-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding-top: 20px;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.footer-item {
+    flex: 0 0 100%;
+    text-align: center;
+    margin: 0;
+    margin-top: 10px;
+    border-top: #000000 3px solid;
+}
+
+.container-showcase-item:hover > img {
+  opacity:0.4;
+}
+
+/*Media Qeury is needed at the end.*/
+@media (max-width: 880px) {
+  .container-wrapper-intro {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .header-image {
+    max-width: 400px;
+  }
+
+  .container-intro-flex {
+    margin: 0;
+    align-items: center;
+  }
+
+  .container-showcase-item > p {
+    text-align: center;
+  }
+
+  .container-intro-flex > h1,
+  .container-intro-flex > p {
+    text-align: center;
+  }
+
+} 
